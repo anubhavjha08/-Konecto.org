@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: url("MIT-Dome-WP.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    padding: 3%;
+    /* margin-left: 10px; */
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: #ffbaba; */
+    /* text-align: center; */
+}
+div{
+    height: 550px;
+    /* border: 3px solid #ffbaba; */
+    background-image: url("MIT-Dome-WP.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+nav{
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.235);
+    box-shadow: 3px 3px 5px rgba(0,0, 0, 0.1);
+
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+    padding: 0 30px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.213);
+    box-shadow: -10px 0 10px rgba(0,0, 0, 0.2);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+..sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+main,aside{
+    padding: 2%;
+    color: #ffbaba;
+}
+
+footer{
+    text-align: center;
+    padding: 2%;
+    background-color: #c8b974 ;
+    /* font-weight: bold; */
+}

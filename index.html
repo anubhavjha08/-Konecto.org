@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Konecto</title>
-    <link rel="stylesheet" href="Frontend\css\style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
 
@@ -13,7 +13,8 @@
     <header>
         <h1>KONECTO</h1>
         <nav>
-            <ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#">Home</a></li>
                 <li>
                     <a href="Frontend\html\teachersReview.html">Teachers Review</a>
@@ -23,6 +24,18 @@
                 <li>
                     <a href="https://vtop.vitbhopal.ac.in/vtop/open/page">V-TOP</a>
                 </li>
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="hideOnMobile">
+                    <a href="Frontend\html\teachersReview.html">Teachers Review</a>
+                </li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li class="hideOnMobile"><a href="#">Merchandise</a></li>
+                <li class="hideOnMobile">
+                    <a href="https://vtop.vitbhopal.ac.in/vtop/open/page">V-TOP</a>
+                </li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
