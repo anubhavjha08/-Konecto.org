@@ -7,6 +7,7 @@
     <title>Konecto</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/340bc71e7c.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,11 @@
         <h1>KONECTO</h1>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                            viewBox="0 -960 960 960" width="26">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="#">Home</a></li>
                 <li>
                     <a href="Frontend\html\teachersReview.html">Teachers Review</a>
@@ -26,7 +31,7 @@
                 </li>
             </ul>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
                 <li class="hideOnMobile">
                     <a href="Frontend\html\teachersReview.html">Teachers Review</a>
                 </li>
@@ -35,7 +40,10 @@
                 <li class="hideOnMobile">
                     <a href="https://vtop.vitbhopal.ac.in/vtop/open/page">V-TOP</a>
                 </li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
     </header>
@@ -45,17 +53,20 @@
     <main>
         <section>
             <h2>About Us</h2>
-            <p>Welcome to our website! We provide...</p>
+            <p>We are a team led by Anubhav Jha, an undergraduate student at VIT Bhopal University. With a focus on
+                leveraging technology to address university needs, we develop innovative solutions to streamline
+                processes and enrich the overall university experience. Our goal is to empower individuals within the
+                VIT Bhopal community to thrive academically and professionally through technology.</p>
         </section>
 
-        <!-- <section>
+        <section>
             <h2>Our Services</h2>
             <ul>
                 <li>Service 1</li>
                 <li>Service 2</li>
                 <li>Service 3</li>
             </ul>
-        </section> -->
+        </section>
     </main>
 
     <aside>
@@ -64,7 +75,52 @@
     </aside>
 
     <footer>
-        <p>&copy; 2024 : KONECTO</p>
+        <div class="row">
+            <div class="col">
+                <img src="konee.png" class="logo">
+                <p>Our website offers tailored technology solutions for VIT Bhopal University. Led by Anubhav Jha, an
+                    undergraduate student at VIT Bhopal, our platform enhances academic support, administrative
+                    efficiency, student engagement, and campus communication. We aim to create a digital ecosystem that
+                    fosters collaboration, innovation, and student success at VIT Bhopal University.</p>
+            </div>
+
+            <div class="col">
+                <h3>office <div class="underline"><span></span></div></h3>
+                <p>Room no : 611</p>
+                <P>Boys Hostel B-1, VIT </P>
+                <P>Bhopal, Pin : 466114, India</P>
+                <P class="email-id">anubhavjha0812@gmail.com</P>
+                <h4>+91 - 9102313439</h4>
+            </div>
+
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></h3>
+                <ul>
+                    <li><a class="mol" href="">Home</a></li>
+                    <li><a class="mol" href="">Services</a></li>
+                    <li><a class="mol" href="">About Us</a></li>
+                    <li><a class="mol" href="">Features</a></li>
+                    <li><a class="mol" href="">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter Your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Konecto &copy; 2024 - All Rights Reserved</p>
     </footer>
 </body>
 
